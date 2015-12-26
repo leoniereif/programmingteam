@@ -1,2 +1,2 @@
 # programmingteam
-README
+Code examples from programming club exercises

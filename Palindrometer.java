@@ -1,23 +1,23 @@
 import java.util.Scanner;
 public class Palindrometer {
     public static void main(String...args) {
-        Scanner scanner = new Scanner (System.in);
+        Scanner scanner = new Scanner(System.in);
         String n = scanner.nextLine();
         String save = n;
         boolean p = false;
-        while (!n.equals("0")){
+        while (!n.equals("0")) {
             while (!p) {
-                if(isP(n)){
+                if (isP(n)) {
                     p = true;
                 } else {
                     int len = n.length();
-                    n = String.valueOf(Integer.parseInt(n)+1);
+                    n = String.valueOf(Integer.parseInt(n) + 1);
                     while (len != n.length()) {
                         n = "0" + n;
                     }
                 }
             }
-            System.out.println(Integer.parseInt(n)-Integer.parseInt(save));
+            System.out.println(Integer.parseInt(n) - Integer.parseInt(save));
             p = false;
             n = scanner.nextLine();
             save = n;

@@ -6,7 +6,7 @@ public class ActivitySelection {
         int size = scanner.nextInt();
         int[][] array = new int[size][2];
         scanner.nextLine();
-        for(int i = 0; i<size; i++) {
+        for (int i = 0; i<size; i++) {
             String lineText = scanner.nextLine();
             System.out.println(lineText);
             String[] splitted = lineText.split(" ");
